@@ -9,7 +9,6 @@ services:
       - ./appdata:/app/appdata
       - ./appdata/repo:/app/appdata/repo
     environment:
-      - ARCH=x86_64
       - PUID=1000
       - PGID=1000
       - GPG_KEY_NAME=example
