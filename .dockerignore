@@ -1,0 +1,9 @@
+README.md
+LICENSE
+.dockerignore
+.gitignore
+Dockerfile
+.git
+docker-compose.yml
+update-docker-version.sh
+appdata

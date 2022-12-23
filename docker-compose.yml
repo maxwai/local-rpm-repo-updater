@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  local-repo-updater:
+    container_name: Local-Repo-Updater
+    build: .
+    restart: "no"
+    volumes:
+      - ./appdata:/app/appdata
+      - ./appdata/repo:/app/appdata/repo
+    environment:
+      - ARCH=x86_64
+      - PUID=1000
+      - PGID=1000
+      - GPG_KEY_NAME=example
+      - GPG_KEY_EMAIL=example@example.com
